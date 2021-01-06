@@ -1,0 +1,255 @@
+@import ../base
+
+*
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+
+#space
+    height: 8rem
+/* Title */
+.title
+    background-color: $cyellow
+    font-family: $roboto
+    font-weight: 700
+    .container
+        width: 80%
+        margin: auto
+        padding: 2rem 0
+
+/* Examples */
+#examples
+    width: 80%
+    margin: 1.5rem auto
+    h3
+        font-family: $roboto
+        margin-bottom: 1rem
+    .works
+        display: flex
+        flex-direction: column
+        justify-content: center
+        flex-wrap: wrap
+        gap: 1rem
+        margin-bottom: 1rem
+        figure
+            width: 100%
+            background-color: #00afef2f
+            img
+                width: 100%
+        .abso
+            width: 100%
+            height: 540px
+            background-color: #00afef2f
+            overflow: hidden
+            position: relative
+            img
+                width: 150%
+                position: absolute
+                left: 50%
+                top: 50%
+                -webkit-transform: translate(-50%, -50%)
+                -moz-transform: translate(-50%, -50%)
+                -ms-transform: translate(-50%, -50%)
+                -o-transform: translate(-50%, -50%)
+                transform: translate(-50%, -50%)
+
+/* Prices */
+.prices
+    background-color: #cccccc
+    margin: 1.5rem auto 2rem
+    .container
+        width: 80%
+        margin: 0 auto
+        padding-top: 2rem
+        padding-bottom: 2.5rem
+        font-family: $roboto
+        h2
+            margin-bottom: 1rem
+        button
+            display: flex
+            justify-content: space-between
+            align-items: center
+            width: 100%
+            border: none
+            background-color: #ffffff
+            padding: 1rem
+            font-size: 1rem
+            -webkit-box-shadow: 0px 0px 5px -1px rgba(0,0,0,0.75)
+            -moz-box-shadow: 0px 0px 5px -1px rgba(0,0,0,0.75)
+            box-shadow: 0px 0px 5px -1px rgba(0,0,0,0.75)
+            span
+                font-size: 1.5rem
+        section
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            padding: 1rem 0.5rem 3rem
+            figure
+                width: 100%
+                img
+                    width: 100%
+            div
+                text-align: center
+                margin-top: 1rem
+                color: #ffffff
+                h4
+                    font-weight: 200
+                    font-size: 2rem
+                    margin-bottom: 0.5rem
+                p
+                    margin: 0.5rem auto
+        #lineart
+            background-color: $cyan
+        #flat
+            background-color: #ffffff
+            div
+                color: #000000
+        #shaded
+            background-color: $magenta
+        #back
+            background-color: #ffffff
+            div
+                color: #000000
+        #extras
+            background-color: #000000
+            div
+                color: #ffffff
+                ul
+                    list-style: none
+                #disclaimer
+                    font-family: $condensed
+                    font-weight: 200
+        #vectors
+            background-color: $cyan
+        #brand
+            background-color: #ffffff
+            div
+                color: #000000
+        #motion
+            background-color: $magenta
+            video
+                width: 100%
+        #front
+            background-color: $cyan
+            div
+                #disclaimer
+                    font-family: $condensed
+                    font-weight: 200
+.illustration, .graphic, .web
+    display: none
+
+/* Extra Information */
+
+#extrainfo
+    margin: 1rem auto 10rem
+    .container
+        width: 80%
+        margin: 1rem auto
+        padding: 1rem 0rem 1.5rem
+        h2
+            font-size: 1.5rem
+            font-weight: 700
+            font-family: $condensed
+            margin-bottom: 1rem
+        h3
+            font-size: 1.2rem
+            color: $magenta
+            margin-bottom: 0.5rem
+            margin-top: 1.5rem
+        p
+            font-family: $condensed
+            font-weight: 200
+            margin-bottom: 0.5rem
+            text-align: justify
+
+/* Tablet */
+/* 768px*/
+@media screen and ( min-width:768px)
+    //Examples
+    #examples
+        .works
+            flex-direction: row
+            justify-content: center
+            align-items: center
+            gap: 1rem
+            flex-wrap: wrap
+            figure
+                width: 20em
+            .abso
+                width: 20em
+                height: 30rem
+                img
+                    width: 150%
+                    height: auto
+    //prices
+    .prices
+        padding: 2rem 0rem
+        .illustration
+            section
+                padding-left: 1rem
+                padding-right: 1rem
+                display: flex
+                flex-direction: row
+                justify-content: flex-start
+                align-items: flex-start
+                figure
+                    width: 18em
+                div
+                    text-align: left
+                    margin-left: 1rem
+        .graphic
+            section
+                padding-left: 1rem
+                padding-right: 1rem
+                display: flex
+                flex-direction: row
+                justify-content: flex-start
+                align-items: flex-start
+                figure
+                    width: 18em
+                div
+                    text-align: left
+                    margin-left: 1rem
+            #motion
+                video
+                    width: 18em
+        .web
+            section
+                padding-left: 1rem
+                padding-right: 1rem
+                display: flex
+                flex-direction: row
+                justify-content: flex-start
+                align-items: flex-start
+                figure
+                    width: 18em
+                div
+                    text-align: left
+                    margin-left: 1rem
+
+/*Desktop version*/
+@media screen and ( min-width:940px)
+    //prices
+    .prices
+        .illustration
+            section
+                padding-left: 1.5rem
+                padding-right: 1.5rem
+                figure
+                    width: 25em
+        .graphic
+            section
+                padding-left: 1.5rem
+                padding-right: 1.5rem
+                figure
+                    width: 25em
+            #motion
+                video
+                    width: 25em
+        .web
+            section
+                padding-left: 1.5rem
+                padding-right: 1.5rem
+                figure
+                    width: 25em

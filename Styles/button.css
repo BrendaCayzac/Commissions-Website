@@ -1,0 +1,17 @@
+/* Go to TOP */
+#top{
+    width: 4rem;
+    height: 4rem;
+    background-color: #ec008c;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 4rem;
+    margin: 0rem auto;
+    color: #ffffff;
+    position: fixed;
+    left: 50%;
+    bottom: 10%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    display: none;
+}

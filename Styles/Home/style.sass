@@ -1,0 +1,267 @@
+@import ../base
+
+//Mobile First - Responsive
+*
+    box-sizing: border-box
+    margin: 0rem
+    padding: 0rem
+    transition-timing-function: ease
+
+/* Header */
+#header
+    //brand not displayed
+    padding-top: 8rem
+    width: 80%
+    margin: 0rem auto
+    #brand
+        display: none
+    div
+        display: flex
+        flex-direction: column
+        text-align: center
+        align-items: center
+        font-size: 1rem
+        //my picture
+        #me
+            position: relative
+            width: 15rem
+            height: 15rem
+            border-radius: 50%
+            background-color: $magenta
+            margin-bottom: 2rem
+            &:hover
+                figcaption
+                    opacity: 100
+                    font-family: $roboto
+                    font-weight: 600
+                    color: #ffffff
+            figcaption
+                z-index: 1
+                position: absolute
+                top: 50%
+                left: 50%
+                transform: translate(-50%, -50%)
+                opacity: 0
+            img
+
+                border-radius: 50%
+                width: 100%
+                z-index: 2
+                &:hover
+                    opacity: 50%
+        //introduction
+        article
+            p
+                text-align: justify
+                font-family: $roboto
+                font-weight: 400
+                color: $grey
+                strong
+                    font-family: $roboto
+                    color: $magenta
+
+/* Links Section */
+#links
+    display: flex
+    flex-direction: column-reverse
+    justify-content: center
+    align-items: center
+    margin-top: 4rem
+    //Social Media
+    .media
+        margin: 4rem 0rem
+        background-color: $cyan
+        width: 100%
+        .mediacontainer
+            width: 80%
+            margin: 0rem auto
+            display: flex
+            flex-wrap: wrap
+            align-items: center
+            justify-content: space-between
+            padding: 3rem 0rem
+            div
+                width: 32%
+                display: flex
+                justify-content: center
+                align-items: center
+                .text
+                    display: none
+                .button
+                    border-radius: 50%
+                    background-color: #ffffff
+                    width: 5rem
+                    height: 5rem
+                    font-size: 3rem
+                    color: $cyan
+                    text-align: center
+                    line-height: 5.2rem
+
+    //Pages
+    .pages
+        // section attributes
+        align-items: center
+        justify-content: center
+        text-align: center
+        width: 80%
+        display: flex
+        flex-direction: column
+        text-align: center
+        gap: 1rem
+        //special btn settings for animations
+    .anibtn
+        color: #ffffff
+        background-color: $magenta
+        cursor: pointer
+        font-size: 1.5rem
+        font-weight: 700
+        width: 100%
+        position: relative
+        text-decoration: none
+        text-transform: uppercase
+        width: 100%
+        padding: 1.5rem 1.5rem
+        transition-property: all
+        transition-duration: .6s
+        &:hover
+            text-decoration: none
+        a
+            padding: 2.1rem 0rem 2rem
+            color: #ffffff
+            font-family: $roboto
+    //Reflection
+    .homebtn
+        overflow: hidden
+        position: relative
+        span
+            z-index: 20
+        &:after
+            background: #ffffff
+            content: ""
+            height: 10rem
+            left: -4.7rem
+            opacity: .2
+            position: absolute
+            top: -3.125rem
+            transform: rotate(35deg)
+            transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1)
+            width: 3rem
+            z-index: 30
+    .homebtn:hover
+        &:after
+            left: 120%
+            transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1)
+
+/* Quote*/
+#quote
+    width: 80%
+    font-family: $roboto
+    text-align: justify
+    margin: 0rem auto
+    margin-bottom: 13rem
+    em
+        color: $grey
+/* Go to TOP */
+#top
+    width: 4rem
+    height: 4rem
+    background-color: $magenta
+    border-radius: 50%
+    text-align: center
+    line-height: 4rem
+    margin: 0rem auto
+    color: #ffffff
+    position: fixed
+    left: 50%
+    bottom: 10%
+    transform: translate(-50%, -50%)
+    z-index: 3
+    display: none
+
+/* Tablet */
+/* 768px*/
+@media screen and ( min-width:768px)
+    #header
+        div
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+            align-items: center
+            flex-wrap: wrap
+            gap: 1rem
+            #me
+                width: 12rem
+                height: 12em
+                margin-bottom: 0
+            article
+                width: 28rem
+    //links
+    #links
+        //Social Media
+        margin-top: 3rem
+        .media
+            margin: 3rem auto
+            .mediacontainer
+                div
+                    width: 32%
+                    display: flex
+                    justify-content: flex-start
+                    align-items: center
+                    background: none
+                    gap: 0.5rem
+                    &:hover
+                        transform: scale(1.1)
+                    .button
+                        width: 4rem
+                        height: 4rem
+                        background-color: #ffffff
+                        border-radius: 50%
+                        line-height: 4.2rem
+                        font-size: 2rem
+                    .text
+                        color: #ffffff
+                        font-size: 1.2rem
+                        text-decoration: none
+                        display: initial
+        //Pages
+        .pages
+            flex-direction: row
+            justify-content: space-between
+            align-items: center
+            gap: 1rem
+    /* Quote*/
+    #quote
+        margin-bottom: 20rem
+        p
+            color: $magenta
+            em
+                color: $grey
+
+/*Desktop version*/
+@media screen and ( min-width:940px)
+    #header
+        #brand
+            display: flex
+            justify-content: center
+            margin-bottom: 1.5rem
+            padding-bottom: 3rem
+            border-bottom: 8px solid $cyan
+            align-items: center
+            img
+                width: 30%
+        div
+            justify-content: center
+            article
+                width: 72%
+    //links
+    #links
+        //Social Media
+        flex-direction: column
+        margin-top: 0
+        margin-bottom: 3rem
+    //quote
+    #quote
+        margin-bottom: 12rem
+    /* Go to TOP */
+    #top
+        bottom: 9%

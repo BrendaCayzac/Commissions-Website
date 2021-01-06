@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.building{
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.building img{
+    width: 18rem;
+}
+
+.building .containertext{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 18rem;
+    margin: 0.5rem auto 0;
+}
+.building .containertext h2{
+    width: 100%;
+    font-size: 1.54rem;
+    text-transform: uppercase;
+    color: #3a3a3a;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+}
+.building .containertext p{
+    width: 100%;
+    font-size: 1.2rem;
+    color: #00aeef;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}

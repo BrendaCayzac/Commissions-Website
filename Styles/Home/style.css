@@ -1,0 +1,399 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0rem;
+  padding: 0rem;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+}
+
+/* Header */
+#header {
+  padding-top: 8rem;
+  width: 80%;
+  margin: 0rem auto;
+}
+
+#header #brand {
+  display: none;
+}
+
+#header div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1rem;
+}
+
+#header div #me {
+  position: relative;
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  background-color: #ec008c;
+  margin-bottom: 2rem;
+}
+
+#header div #me:hover figcaption {
+  opacity: 100;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+#header div #me figcaption {
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+#header div #me img {
+  border-radius: 50%;
+  width: 100%;
+  z-index: 2;
+}
+
+#header div #me img:hover {
+  opacity: 50%;
+}
+
+#header div article p {
+  text-align: justify;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #3a3a3a;
+}
+
+#header div article p strong {
+  font-family: "Roboto", sans-serif;
+  color: #ec008c;
+}
+
+/* Links Section */
+#links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 4rem;
+}
+
+#links .media {
+  margin: 4rem 0rem;
+  background-color: #00aeef;
+  width: 100%;
+}
+
+#links .media .mediacontainer {
+  width: 80%;
+  margin: 0rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 3rem 0rem;
+}
+
+#links .media .mediacontainer div {
+  width: 32%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#links .media .mediacontainer div .text {
+  display: none;
+}
+
+#links .media .mediacontainer div .button {
+  border-radius: 50%;
+  background-color: #ffffff;
+  width: 5rem;
+  height: 5rem;
+  font-size: 3rem;
+  color: #00aeef;
+  text-align: center;
+  line-height: 5.2rem;
+}
+
+#links .pages {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  gap: 1rem;
+}
+
+#links .anibtn {
+  color: #ffffff;
+  background-color: #ec008c;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: 700;
+  width: 100%;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+  padding: 1.5rem 1.5rem;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: .6s;
+          transition-duration: .6s;
+}
+
+#links .anibtn:hover {
+  text-decoration: none;
+}
+
+#links .anibtn a {
+  padding: 2.1rem 0rem 2rem;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+}
+
+#links .homebtn {
+  overflow: hidden;
+  position: relative;
+}
+
+#links .homebtn span {
+  z-index: 20;
+}
+
+#links .homebtn:after {
+  background: #ffffff;
+  content: "";
+  height: 10rem;
+  left: -4.7rem;
+  opacity: .2;
+  position: absolute;
+  top: -3.125rem;
+  -webkit-transform: rotate(35deg);
+          transform: rotate(35deg);
+  -webkit-transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+  width: 3rem;
+  z-index: 30;
+}
+
+#links .homebtn:hover:after {
+  left: 120%;
+  -webkit-transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+/* Quote*/
+#quote {
+  width: 80%;
+  font-family: "Roboto", sans-serif;
+  text-align: justify;
+  margin: 0rem auto;
+  margin-bottom: 13rem;
+}
+
+#quote em {
+  color: #3a3a3a;
+}
+
+/* Go to TOP */
+#top {
+  width: 4rem;
+  height: 4rem;
+  background-color: #ec008c;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 4rem;
+  margin: 0rem auto;
+  color: #ffffff;
+  position: fixed;
+  left: 50%;
+  bottom: 10%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 3;
+  display: none;
+}
+
+/* Tablet */
+/* 768px*/
+@media screen and (min-width: 768px) {
+  #header div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 1rem;
+  }
+  #header div #me {
+    width: 12rem;
+    height: 12em;
+    margin-bottom: 0;
+  }
+  #header div article {
+    width: 28rem;
+  }
+  #links {
+    margin-top: 3rem;
+  }
+  #links .media {
+    margin: 3rem auto;
+  }
+  #links .media .mediacontainer div {
+    width: 32%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: none;
+    gap: 0.5rem;
+  }
+  #links .media .mediacontainer div:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  #links .media .mediacontainer div .button {
+    width: 4rem;
+    height: 4rem;
+    background-color: #ffffff;
+    border-radius: 50%;
+    line-height: 4.2rem;
+    font-size: 2rem;
+  }
+  #links .media .mediacontainer div .text {
+    color: #ffffff;
+    font-size: 1.2rem;
+    text-decoration: none;
+    display: initial;
+  }
+  #links .pages {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 1rem;
+  }
+  /* Quote*/
+  #quote {
+    margin-bottom: 20rem;
+  }
+  #quote p {
+    color: #ec008c;
+  }
+  #quote p em {
+    color: #3a3a3a;
+  }
+}
+
+/*Desktop version*/
+@media screen and (min-width: 940px) {
+  #header #brand {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 1.5rem;
+    padding-bottom: 3rem;
+    border-bottom: 8px solid #00aeef;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #header #brand img {
+    width: 30%;
+  }
+  #header div {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #header div article {
+    width: 72%;
+  }
+  #links {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 0;
+    margin-bottom: 3rem;
+  }
+  #quote {
+    margin-bottom: 12rem;
+  }
+  /* Go to TOP */
+  #top {
+    bottom: 9%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
