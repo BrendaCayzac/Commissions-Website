@@ -1,6 +1,9 @@
-/Images/
-/Videos
+/Images/*
+/Videos/*
 *.jpg
 *.jpeg
 *.png
 *.gif
+
+#mac
+.DS_Store
