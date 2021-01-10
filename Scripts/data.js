@@ -288,5 +288,4 @@ const portfolioArray = [
         link: "https://www.behance.net/gallery/43968981/FanArt-AltFinn-Illustration",
         description: "Illustration of Adventure Times's characters: Finn the human and Jake the dog."
     },
-
 ]
