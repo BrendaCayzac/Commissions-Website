@@ -1,5 +1,14 @@
 const portfolioArray = [
     {
+        name: "Bootstrap Exercise",
+        img: "https://picsum.photos/500/500",
+        alt: "Lorem Picsum Image",
+        date: 2021,
+        category: "Web",
+        link: "https://actor-agency.netlify.app",
+        description: "A small sample of the use of Bootsrap alognside jQuery based on an exercise during the programming bootcamp Coding Jobs."
+    },
+    {
         name: "LëtzPark",
         img: "../Images/letz.jpg",
         alt: "LëtzPark Brand",
